@@ -1,0 +1,174 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    width: 80%;
+    margin: 0 auto;
+}
+.custom-ul {
+    display: flex;
+    list-style-type: none;
+    align-items: center;
+}
+.d-flex {
+    display: flex;
+}
+.header{
+    /* margin: 1rem 0; */
+    background-image: url("./AdobeStock_249777683.jpeg");
+    background-size: cover;
+    /* background-position: center; */
+    height: 500px;
+  
+
+  
+}
+.header-top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    padding: 1rem 0;
+}
+.header-context{
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+}
+.header-context .header-context-inner {
+    margin: 0 2rem;
+    justify-content: center;
+    align-items: center;
+
+}
+.header-context-inner span {
+    font-size:xx-large;
+ }
+.header-context .header-context-inner p{
+  
+    padding:0 1rem
+}
+
+.header-context ul li{
+   padding: 0 1rem;
+}
+.header-context ul a {
+    text-decoration: none;
+}
+.header-context ul i {
+  display: inline-block;
+  background-color: white;
+  border-radius: 50%;
+  padding: 6px;
+  opacity: .5;
+}
+/* .header-bottom-wrapper {
+    background-color: #b9d9e0;
+    opacity: .3;
+} */
+.header-bottom-inner {
+    justify-content: space-between;
+    align-items: center;
+    background-color: #b9d9e0;
+    opacity: .3;
+}
+
+.header-bottom-inner ul li{
+    padding: 1rem 1rem;
+}
+.header-bottom-inner li a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+.header-bottom-inner li a:hover{
+
+    color:#0ea8ab;
+}
+.header-bottom-inner .btn{
+    padding: 1rem 3rem;
+
+    background-color: #0ea8ab;
+    color: white;
+    /* border: 2px solid #007bff;
+    border-top-right-radius: 8px;
+    transform: skew(-45deg); */
+
+}
+.online-portfolio-wrapper{
+    margin: 4rem 1rem;
+
+}
+.porfolio-inner{
+    color: white;
+}
+.porfolio-inner p {
+    padding: 1rem 0;
+}
+.porfolio-inner .btn {
+    padding: .7rem 2.5rem;
+    margin-top: 1.2rem;
+}
+.porfolio-inner .blu{
+    background-color: #0ea8ab;
+    color: white;
+}
+.porfolio-inner .wht{
+
+    color:  #0ea8ab;
+}
+
+
+
+
+
+
+
+
+@media(max-width:992px){
+    .header{
+  
+        background-image: url("./AdobeStock_249777683.jpeg");
+        background-size: cover;
+    
+        height: 600px;
+      
+    
+      
+    }
+    
+    .header-top {
+        flex-direction:column;
+}
+.header-logo {
+    margin-bottom: 2rem;
+}
+.header-bottom-inner {
+    flex-direction:column;
+    background-color: transparent;
+    opacity: 1;
+}
+.online-portfolio-wrapper{
+  text-align: center;
+    display: none;
+}
+}
+
+
+@media(max-width:768px){
+    .header-context {
+        flex-direction:column;
+    }
+    .header-context-inner {
+        margin-bottom: 2rem!important;
+    }
+    .header-bottom-inner ul {
+        flex-direction: column;
+    }
+    .online-portfolio-wrapper{
+        text-align: center;
+      
+      }
+}
