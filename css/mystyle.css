@@ -16,38 +16,38 @@
     display: flex;
 }
 .header{
-    /* margin: 1rem 0; */
     background-image: url("./AdobeStock_249777683.jpeg");
     background-size: cover;
-    /* background-position: center; */
     height: 500px;
-  
-
-  
+    width: 100%;
 }
 .header-top{
     display: flex;
     justify-content: space-between;
     align-items: center;
     color: white;
-    padding: 1rem 0;
+    padding-top: 1rem ;
 }
+.header-top .header-logo h5 {
+margin: 0;
+}
+.header-top .header-logo p {
+    font-size: small;
+    }
 .header-context{
     display: flex;
     justify-content: space-between;
     align-items: center; 
 }
 .header-context .header-context-inner {
-    margin: 0 2rem;
+    margin: 0 1rem;
     justify-content: center;
-    align-items: center;
-
-}
+ }
 .header-context-inner span {
     font-size:xx-large;
  }
 .header-context .header-context-inner p{
-  
+    font-size: small;
     padding:0 1rem
 }
 
@@ -64,26 +64,20 @@
   padding: 6px;
   opacity: .5;
 }
-/* .header-bottom-wrapper {
-    background-color: #b9d9e0;
-    opacity: .3;
-} */
+
+
 .header-bottom-inner {
     justify-content: space-between;
     align-items: center;
     background-color: #b9d9e0;
     opacity: .3;
+    /* filter: blur(#b9d9e0 ); */
 }
 
-.header-bottom-inner ul li{
-    padding: 1rem 1rem;
-}
-.header-bottom-inner li a{
-    text-decoration: none;
+.header-bottom-inner .navbar-nav .nav-link{
     color: white;
-    font-weight: bold;
 }
-.header-bottom-inner li a:hover{
+.header-bottom-inner .navbar-nav .nav-link:hover{
 
     color:#0ea8ab;
 }
@@ -92,31 +86,26 @@
 
     background-color: #0ea8ab;
     color: white;
-    /* border: 2px solid #007bff;
-    border-top-right-radius: 8px;
-    transform: skew(-45deg); */
-
-}
+  }
 .online-portfolio-wrapper{
-    margin: 4rem 1rem;
+    margin: 1rem 1rem;
 
 }
 .porfolio-inner{
     color: white;
+    font-size: small;
 }
-.porfolio-inner p {
-    padding: 1rem 0;
-}
+
 .porfolio-inner .btn {
     padding: .7rem 2.5rem;
-    margin-top: 1.2rem;
+
 }
 .porfolio-inner .blu{
     background-color: #0ea8ab;
     color: white;
 }
 .porfolio-inner .wht{
-
+background-color: white;
     color:  #0ea8ab;
 }
 
@@ -141,34 +130,85 @@
     
     .header-top {
         flex-direction:column;
+        font-size: smaller;
 }
-.header-logo {
-    margin-bottom: 2rem;
-}
+
 .header-bottom-inner {
     flex-direction:column;
     background-color: transparent;
     opacity: 1;
 }
-.online-portfolio-wrapper{
-  text-align: center;
-    display: none;
+
+.header-bottom-inner .navbar-nav {
+  flex-direction: column;
+
 }
 }
+.header-bottom-inner .navbar-nav .nav-link{
+    padding: 0.5rem .5rem;
+    font-size: small;
+  }
+
+
 
 
 @media(max-width:768px){
-    .header-context {
-        flex-direction:column;
-    }
-    .header-context-inner {
+
+    .header-context .header-context-inner {
         margin-bottom: 2rem!important;
+        text-align: center;
     }
-    .header-bottom-inner ul {
-        flex-direction: column;
+    .header-context .header-context-inner i {
+        font-size: x-large;
+       }
+    .header-context .header-context-inner p {
+     display: none;
+    }
+
+    .header-bottom-inner .navbar-nav {
+      flex-direction: column;
+    }
+    .header-bottom-inner .navbar-nav .nav-link{
+        padding: 0.5rem .5rem;
     }
     .online-portfolio-wrapper{
-        text-align: center;
-      
+        align-items: center;
+     
       }
+
+}
+
+@media(max-width:576px){
+ 
+    .header-bottom-inner {
+        position: relative;
+    }
+    .header-context .header-context-inner i {
+        font-size: x-large;
+       }
+    .header-context .header-context-inner p {
+        display: none;
+       }
+   
+
+    .header-bottom-inner .navbar-nav {
+      flex-direction: column;
+    }
+    .header-bottom-inner .navbar-nav .nav-link{
+        padding: 0.5rem .5rem;
+    }
+    .header-bottom-inner .btn {
+        padding: 1rem 3rem;
+        background-color: #0ea8ab;
+        color: white;
+    }
+    .header-bottom-inner .btn {
+        padding: 1rem 1rem;
+         margin-left: 1rem;
+    }
+   
+      .header-context .header-context-inner {
+align-items: center;
+    }
+
 }
